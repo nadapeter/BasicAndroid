@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Context;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by peterjlee on 7/14/13.
@@ -43,5 +45,11 @@ public class ListAdapterSample extends ArrayAdapter<String> {
     private View createView(ViewGroup parent) {
         View view = inflater.inflate(R.layout.list_row, parent, false);
         return view;
+    }
+
+    public void deleteCheckedItems(List checkedPositions) {
+        for (int i = checkedPositions.size() - 1; i >= 0; i--) {
+            remove(getItem((Integer) checkedPositions.get(i)));
+        }
     }
 }
