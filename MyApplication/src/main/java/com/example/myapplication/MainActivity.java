@@ -13,8 +13,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Toast;
+import com.actionbarsherlock.app.SherlockActivity;
 
-public class MainActivity extends Activity {
+public class MainActivity extends SherlockActivity {
 
     public Button button;
     public Context context;
@@ -53,12 +54,12 @@ public class MainActivity extends Activity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.main, menu);
+//        return true;
+//    }
 
 //    @Override
 //    public void onCreateContextMenu(ContextMenu menu, View v,
