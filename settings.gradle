@@ -1,1 +1,1 @@
-include ':MyApplication'
+include ':MyApplication', 'libraries:ActionBarSherlock:actionbarsherlock'
