@@ -38,7 +38,6 @@ public class ListActivity extends SherlockActivity implements AdapterView.OnItem
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         //listView.setItemsCanFocus(false);
         listView.setOnItemLongClickListener(this);
-        //listView.setMultiChoiceModeListener(new ListMultiListener(this));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
